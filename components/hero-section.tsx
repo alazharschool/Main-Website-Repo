@@ -54,12 +54,20 @@ export default function HeroSection() {
                   .assalam-alikom-title {
                     font-size: 1.25rem !important;
                     text-shadow: 1px 1px 4px #fff !important;
+                    animation: assalam-fade-in-up 900ms ease-out both;
+                  }
+                  @keyframes assalam-fade-in-up {
+                    from { opacity: 0; transform: translateY(12px); letter-spacing: 0.15em; }
+                    to { opacity: 1; transform: translateY(0); letter-spacing: normal; }
                   }
                   @media (min-width: 640px) {
                     .assalam-alikom-title { font-size: 1.5rem !important; }
                   }
                   @media (min-width: 768px) {
                     .assalam-alikom-title { font-size: 2rem !important; }
+                  }
+                  @media (prefers-reduced-motion: reduce) {
+                    .assalam-alikom-title { animation: none; }
                   }
                 `}</style>
               </div>
