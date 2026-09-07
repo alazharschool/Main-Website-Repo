@@ -254,3 +254,4 @@ npm run deploy:netlify
 **📧 للتواصل: info@alazhar-school.com**
 
 **🌐 الموقع: https://al-azhar-school.vercel.app/** 
+Testing Devin integration
