@@ -1,0 +1,43 @@
+/* Hero Section Theme Variables */
+:root {
+  /* === Gold Colors === */
+  --color-gold-primary: #D4AF37;
+  --color-gold-secondary: #C5A028;
+  --color-gold-light: #E8C872;
+  --color-gold-dark: #B8941F;
+  --color-gold-gradient-start: #F5D67A;
+  --color-gold-gradient-end: #D4AF37;
+  
+  /* === Background Colors === */
+  --color-bg-cream: #F5F0E6;
+  --color-bg-pattern: #E8E0D0;
+  --color-dark-brown: #4A3728;
+  --color-brown-light: #8B7355;
+  --color-brown-medium: #6B4E3D;
+  
+  /* === Text Colors === */
+  --color-text-primary: #2C1810;
+  --color-text-secondary: #5A4030;
+  --color-text-gold: #D4AF37;
+  --color-text-white: #FFFFFF;
+  
+  /* === Fonts === */
+  --font-title: 'Noto Serif', 'Georgia', serif;
+  --font-subtitle: 'Cairo', 'Arial', sans-serif;
+  --font-body: 'Tajawal', 'Arial', sans-serif;
+  
+  /* === Spacing === */
+  --spacing-unit: 0.5rem;
+  --border-radius: 1rem;
+  --border-radius-lg: 1.5rem;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-cream: #1A1410;
+    --color-bg-pattern: #2A1E18;
+    --color-text-primary: #F5F0E6;
+    --color-text-secondary: #E8E0D0;
+  }
+}
