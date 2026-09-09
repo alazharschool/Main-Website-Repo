@@ -8,10 +8,8 @@ import { Mail, Lock, User, BookOpen, GraduationCap, CheckCircle, Loader2 } from 
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useUser } from "@/contexts/UserContext";
 
 export default function LoginPage() {
-  const { login } = useUser();
   const [userType, setUserType] = useState<"student" | "teacher">("student");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -42,34 +40,22 @@ export default function LoginPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!validateForm()) {
       return;
     }
 
     setIsLoading(true);
-    
+
     try {
-      // Use Supabase authentication
-      await login(email, password);
-      
-      // Show success message
+      // TODO: Implement Supabase authentication
+      // For now, redirect to dashboard
       alert(`Welcome back! You are logged in as a ${userType}.`);
-      
-      // Redirect to dashboard
-        router.push("/dashboard");
-      
+      router.push("/dashboard");
+
     } catch (error: any) {
       console.error("Login error:", error);
-      
-      // Handle specific Supabase errors
-      if (error.message?.includes('Invalid login credentials')) {
-        setErrors({ password: "Invalid email or password. Please try again." });
-      } else if (error.message?.includes('Email not confirmed')) {
-        setErrors({ email: "Please check your email and confirm your account." });
-      } else {
       alert("Login failed. Please try again.");
-      }
     } finally {
       setIsLoading(false);
     }

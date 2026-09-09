@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import { useUser } from '@/contexts/UserContext';
 import { useRouter } from 'next/navigation';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -14,7 +13,6 @@ import { Loader2, Users, Calendar, BookOpen, Settings, BarChart3, UserPlus, Edit
 import { scheduleAPI, ScheduleData, AttendanceStats } from '@/lib/api';
 
 export default function AdminPage() {
-  const { user } = useUser();
   const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [students, setStudents] = useState<any[]>([]);
@@ -23,27 +21,10 @@ export default function AdminPage() {
   const [stats, setStats] = useState<AttendanceStats | null>(null);
   const [activeTab, setActiveTab] = useState('overview');
 
-  // Check if user is admin/teacher
+  // Load admin data on mount
   useEffect(() => {
-    if (!user) {
-      router.push('/login');
-      return;
-    }
-    
-    // For demo purposes, allow access if user has admin role
-    // In production, check actual user roles
-    if (user.role !== 'admin' && user.role !== 'teacher') {
-      router.push('/dashboard');
-      return;
-    }
-  }, [user, router]);
-
-  // Load admin data
-  useEffect(() => {
-    if (user?.role === 'admin' || user?.role === 'teacher') {
-      loadAdminData();
-    }
-  }, [user]);
+    loadAdminData();
+  }, []);
 
   const loadAdminData = async () => {
     setLoading(true);

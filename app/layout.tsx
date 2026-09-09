@@ -5,7 +5,6 @@ import "@/styles/globals.css"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import FloatingChatButton from "@/components/floating-chat-button"
-import { UserProvider } from "@/contexts/UserContext"
 
 export default function RootLayout({
   children,
@@ -13,17 +12,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="ar" dir="rtl">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className={notoSansArabic.className}>
-        <UserProvider>
         <Navigation />
         <main>{children}</main>
         <Footer />
         <FloatingChatButton />
-        </UserProvider>
       </body>
     </html>
   )
