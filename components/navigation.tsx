@@ -25,7 +25,7 @@ export default function Navigation() {
     <header className="sticky top-0 z-50 w-full px-4 sm:px-6 lg:px-8 py-4 bg-stone-50/80 backdrop-blur-md border-b border-amber-200/50 shadow-sm">
       <div className="max-w-7xl mx-auto flex items-center justify-between h-16">
 
-        {/* 3. CALL TO ACTION (AUTH) BUTTONS - LEFT side in RTL */}
+        {/* 1. CALL TO ACTION (AUTH) BUTTONS - LEFT side in RTL (first in DOM) */}
         <div className="flex items-center gap-4">
           <Link
             href="/login"
@@ -110,7 +110,7 @@ export default function Navigation() {
           ))}
         </nav>
 
-        {/* 1. BRAND LOGO SECTION - RIGHT side in RTL */}
+        {/* 3. BRAND LOGO SECTION - RIGHT side in RTL (last in DOM) */}
         <Link href="/" className="flex items-center gap-3 cursor-pointer group">
           <div className="relative w-12 h-12 overflow-hidden rounded-full border-2 border-amber-500 bg-amber-50/50 p-1 transition-transform duration-300 group-hover:scale-105 shadow-inner">
             <Image

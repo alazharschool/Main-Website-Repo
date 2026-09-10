@@ -20,52 +20,32 @@ export default function HomePage() {
     <>
       {/* ديكور صورة القرآن في الخلفية يمين الصفحة */}
       <div
-        style={{
-          position: "fixed",
-          top: 0,
-          right: 0,
-          width: "320px",
-          height: "100vh",
-          zIndex: 0,
-          opacity: 0.10,
-          pointerEvents: "none",
-          background: "none"
-        }}
+        className="fixed top-0 right-0 w-80 h-screen z-0 opacity-10 pointer-events-none"
       >
         <Image
           src="/quran_7221480.png"
           alt=""
           width={320}
           height={1080}
-          style={{ width: "100%", height: "100%", objectFit: "contain" }}
+          className="w-full h-full object-contain"
           draggable={false}
         />
       </div>
       {/* ديكور صورة كتاب في الخلفية يسار الصفحة */}
       <div
-        style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          width: "320px",
-          height: "100vh",
-          zIndex: 0,
-          opacity: 0.10,
-          pointerEvents: "none",
-          background: "none"
-        }}
+        className="fixed top-0 left-0 w-80 h-screen z-0 opacity-10 pointer-events-none"
       >
         <Image
           src="/book_13534590.png"
           alt=""
           width={320}
           height={1080}
-          style={{ width: "100%", height: "100%", objectFit: "contain" }}
+          className="w-full h-full object-contain"
           draggable={false}
         />
       </div>
       {/* باقي الصفحة */}
-    <div className="min-h-screen">
+    <div className="min-h-screen relative z-10">
       {/* Hero Section */}
       <HeroSection />
         {/* Decorative Divider below Hero, always fully visible */}
@@ -89,17 +69,22 @@ export default function HomePage() {
         </div>
         {/* Decorative Divider perfectly centered between Book Now and About Us */}
         <FadeInSection>
-          <section className="py-6 sm:py-8 px-4 section-light" style={{ backgroundImage: 'url(/islamic-pattern-new.jpg)', backgroundSize: 'cover', backgroundRepeat: 'repeat', backgroundPosition: 'center' }}>
-        <div className="max-w-6xl mx-auto">
+          <section className="py-6 sm:py-8 px-4 section-light relative overflow-hidden">
+            <div className="absolute inset-0 z-0">
+              <Image
+                src="/islamic-pattern-new.jpg"
+                alt=""
+                fill
+                className="object-cover opacity-30"
+                priority
+              />
+            </div>
+        <div className="max-w-6xl mx-auto relative z-10">
               <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <FadeInSection direction="left">
               <div
                 className="content-overlay"
                 style={{
-                  backgroundImage: 'url(/islamic-pattern-new.jpg)',
-                  backgroundSize: 'cover',
-                  backgroundRepeat: 'repeat',
-                  backgroundPosition: 'center',
                   border: '4px solid #8B4513',
                   borderRadius: '2rem',
                   padding: '2rem',
@@ -451,13 +436,16 @@ export default function HomePage() {
       </section>
       {/* Divider */}
       {/* Statistics Section */}
-        <section className="py-12 sm:py-16 md:py-20 px-4 bg-gradient-to-r from-amber-50 to-yellow-50 relative overflow-hidden" style={{
-        backgroundImage: 'url(/backgrund1.svg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        position: 'relative'
-      }}>
+        <section className="py-12 sm:py-16 md:py-20 px-4 bg-gradient-to-r from-amber-50 to-yellow-50 relative overflow-hidden">
+          <div className="absolute inset-0 z-0">
+            <Image
+              src="/backgrund1.svg"
+              alt=""
+              fill
+              className="object-cover opacity-20"
+              priority
+            />
+          </div>
         <div style={{
           position: 'absolute',
           top: 0,
@@ -630,13 +618,16 @@ export default function HomePage() {
         </div>
       </section>
         {/* CTA Section */}
-        <section className="py-12 sm:py-16 px-4 bg-gradient-to-r from-amber-50 to-yellow-50 relative overflow-hidden" style={{
-          backgroundImage: 'url(/backgrund1.svg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          position: 'relative'
-        }}>
+        <section className="py-12 sm:py-16 px-4 bg-gradient-to-r from-amber-50 to-yellow-50 relative overflow-hidden">
+          <div className="absolute inset-0 z-0">
+            <Image
+              src="/backgrund1.svg"
+              alt=""
+              fill
+              className="object-cover opacity-20"
+              priority
+            />
+          </div>
           <div style={{
             position: 'absolute',
             top: 0,
