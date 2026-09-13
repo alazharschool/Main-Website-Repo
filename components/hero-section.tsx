@@ -24,209 +24,227 @@ const TelegramIcon = ({ className }: { className?: string }) => (
 export default function HeroSection() {
   return (
     <div className="min-h-screen bg-[#f8f3eb] relative overflow-hidden">
+      {/* Gold Ornate Frame Border */}
+      <div className="absolute inset-0 pointer-events-none z-50">
+        <div className="absolute inset-4 border-4 border-[#d4af37] rounded-lg opacity-60"></div>
+        <div className="absolute inset-6 border-2 border-[#d4af37] rounded-lg opacity-40"></div>
+      </div>
+
+      {/* Background Islamic Pattern */}
+      <div className="absolute inset-0 opacity-10 pointer-events-none">
+        <div 
+          className="w-full h-full"
+          style={{
+            backgroundImage: "url('/islamic-pattern-new.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "repeat",
+          }}
+        />
+      </div>
+
       {/* Main Hero Content */}
-      <main
-        className="relative z-10 px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 xl:py-20 overflow-visible"
-        style={{
-          backgroundImage: "url('/islamic-pattern-new.jpg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          minHeight: "100vh",
-        }}
-      >
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-4 sm:gap-8 lg:gap-16 items-center">
-            {/* Left Side Content */}
-            <div className="space-y-4 sm:space-y-6 relative mt-0 sm:mt-0">
-              {/* Greeting */}
-              <div style={{ position: 'relative' }}>
-                <p
-                  className="assalam-alikom-title text-black mb-1 text-center lg:text-left text-lg sm:text-xl md:text-2xl"
-                  style={{
-                    fontFamily: "Noto Serif",
-                    fontWeight: 900,
-                  }}
-                >
-                  Assalam Alikom
-                </p>
-                <style>{`
-                  .assalam-alikom-title {
-                    font-size: 1.25rem !important;
-                    text-shadow: 1px 1px 4px #fff !important;
-                  }
-                  @media (min-width: 640px) {
-                    .assalam-alikom-title { font-size: 1.5rem !important; }
-                  }
-                  @media (min-width: 768px) {
-                    .assalam-alikom-title { font-size: 2rem !important; }
-                  }
-                `}</style>
+      <main className="relative z-10 px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 xl:py-20 min-h-screen flex items-center">
+        <div className="max-w-7xl mx-auto w-full">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+            
+            {/* Left Column - Quran Pedestal & Lantern */}
+            <div className="relative flex flex-col items-center justify-center order-2 lg:order-1 space-y-6">
+              {/* 3D Illuminated Quran Pedestal */}
+              <div className="relative w-full max-w-md mx-auto">
+                <div className="relative z-10">
+                  <Image
+                    src="/quran_7221480.png"
+                    alt="Quran on Illuminated Pedestal"
+                    width={400}
+                    height={500}
+                    className="w-full h-auto object-contain drop-shadow-2xl"
+                    priority
+                  />
+                </div>
+                {/* Glow Effect */}
+                <div className="absolute inset-0 bg-gradient-to-t from-amber-400/30 to-transparent blur-3xl -z-10"></div>
               </div>
 
-              {/* Main Title */}
-              <div>
-                <h1
-                  className="hero-main-title text-center lg:text-left text-2xl sm:text-4xl md:text-5xl font-black"
+              {/* Lantern Image */}
+              <div className="relative w-full max-w-sm mx-auto">
+                <Image
+                  src="/tajweed.png"
+                  alt="Islamic Lantern"
+                  width={200}
+                  height={300}
+                  className="w-full h-auto object-contain drop-shadow-xl"
+                  priority
+                />
+              </div>
+            </div>
+
+            {/* Right Column - Content */}
+            <div className="relative flex flex-col items-center lg:items-start space-y-6 order-1 lg:order-2">
+              
+              {/* Golden Dome & Minarets Background */}
+              <div className="relative w-full max-w-lg mx-auto lg:mx-0">
+                <div className="absolute inset-0 z-0 opacity-30">
+                  <Image
+                    src="/islamic.svg"
+                    alt="Golden Dome and Minarets"
+                    fill
+                    className="object-contain"
+                    priority
+                  />
+                </div>
+                
+                {/* Al-Azhar School Title */}
+                <div className="relative z-10 text-center lg:text-left">
+                  <h1
+                    className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black"
+                    style={{
+                      fontFamily: 'Noto Serif',
+                      fontWeight: 900,
+                      color: '#d4af37',
+                      letterSpacing: '3px',
+                      textShadow: '3px 3px 0 #5a2600, 4px 4px 8px rgba(0,0,0,0.3)',
+                      lineHeight: 1.1,
+                    }}
+                  >
+                    Al-Azhar School
+                  </h1>
+                </div>
+              </div>
+
+              {/* Subtitle */}
+              <div className="text-center lg:text-left">
+                <h2
+                  className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black"
                   style={{
                     fontFamily: 'Noto Serif',
                     fontWeight: 900,
-                    color: '#ffb800',
+                    color: '#5a2600',
                     letterSpacing: '2px',
-                    textShadow: '2px 2px 0 #000, 3px 3px 6px #000',
-                    lineHeight: 1.1,
+                    textShadow: '1px 1px 2px rgba(255,255,255,0.5)',
                   }}
                 >
-                  Al-Azhar School
-                </h1>
-              </div>
-              <style jsx>{`
-                @media (max-width: 768px) {
-                  .hero-main-title {
-                    font-size: 2.5rem !important;
-                    line-height: 1.1 !important;
-                  }
-                }
-              `}</style>
-
-              {/* Subheading */}
-              <div>
-                <p
-                  className="text-xs sm:text-sm md:text-base text-gray-800 leading-relaxed max-w-2xl text-center lg:text-left mx-auto lg:mx-0"
-                  style={{
-                    fontFamily: "Tajawal, Cairo, Noto Serif, serif",
-                    fontWeight: 700,
-                    letterSpacing: "0.01em",
-                    textShadow: "1px 1px 2px #fff, 0 1px 8px #e8d5b7",
-                  }}
-                >
-                  Learn Quran online with certified Al-Azhar teachers.<br/>
-                  Flexible online Quran classes for kids and adults.<br/>
-                  Study Tajweed, Hifz, and Quran recitation anytime, anywhere. Affordable private and group Quran lessons tailored for non-Arabic speakers.<br/>
-                  Discover modern Quran e-learning with native Arabic tutors and build a strong connection to the Holy Quran from home.
-                </p>
+                  LEARN QURAN ONLINE
+                </h2>
               </div>
 
-              {/* Social Media Icons */}
-              <div className="flex items-center justify-center lg:justify-start space-x-2 sm:space-x-4">
-                <div className="flex items-center space-x-1 sm:space-x-2 md:space-x-3 flex-wrap justify-center lg:justify-start">
+              {/* Feature Badges */}
+              <div className="w-full max-w-2xl mx-auto lg:mx-0">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                   {[
-                    { Icon: Youtube, href: "https://www.youtube.com/@Al-AzharSchool-london", color: "#FF0000" },
-                    { Icon: Facebook, href: "https://www.facebook.com/al.azhar.school.2025", color: "#1877F3" },
-                    { Icon: Twitter, href: "https://x.com/AlAzharSchool19", color: "#1DA1F2" },
-                    { Icon: TelegramIcon, href: "https://t.me/+SN-s-3GtM6FlMWQ0", color: "#229ED9" },
-                    { Icon: Instagram, href: "https://www.instagram.com/school.alazhar/", color: "#E1306C" },
-                    { Icon: Linkedin, href: "https://www.linkedin.com/in/al-azhar-school-a67598332", color: "#0077B5" },
-                    { Icon: TikTokIcon, href: "https://www.tiktok.com/@alazhar.school?_t=8pt46ygpr4q&_r=1", color: "#000" },
-                  ].map(({ Icon, href, color }, index) => (
-                    <Link
+                    { icon: '📖', text: 'Quran Reading' },
+                    { icon: '📚', text: 'Memorization' },
+                    { icon: '🌍', text: 'Arabic Language' },
+                    { icon: '🕌', text: 'Islamic Studies' },
+                    { icon: '👨‍🏫', text: 'Male Teachers' },
+                    { icon: '👩‍🏫', text: 'Female Teachers' },
+                  ].map((feature, index) => (
+                    <div
                       key={index}
-                      href={href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 border-2 border-[#5a2600] bg-[#fde6c3] rounded-full flex items-center justify-center shadow-[0_4px_16px_#c9a063,0_1.5px_0_#fff_inset] hover:shadow-2xl hover:shadow-black/70 hover:scale-110 hover:rotate-12 active:scale-95 active:shadow-2xl transition-transform duration-200 will-change-transform animate-social-fadein"
-                      style={{ color: color || '#000', animationDelay: `${index * 0.1 + 0.2}s` }}
+                      className="flex items-center space-x-2 bg-white/80 backdrop-blur-sm border-2 border-[#d4af37] rounded-lg px-4 py-3 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
                     >
-                      <Icon className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 transition-transform duration-200 hover:scale-110 hover:rotate-12" />
-                    </Link>
+                      <span className="text-2xl">{feature.icon}</span>
+                      <span
+                        className="text-sm sm:text-base font-bold"
+                        style={{
+                          fontFamily: 'Noto Serif',
+                          fontWeight: 700,
+                          color: '#5a2600',
+                        }}
+                      >
+                        {feature.text}
+                      </span>
+                    </div>
                   ))}
                 </div>
               </div>
 
-              {/* Main CTA Button */}
-              <div className="flex justify-center lg:justify-start mt-2">
+              {/* Dark Brown Ribbon */}
+              <div className="w-full max-w-2xl mx-auto lg:mx-0">
+                <div
+                  className="relative bg-gradient-to-r from-[#5a2600] via-[#8B4513] to-[#5a2600] px-6 py-4 shadow-xl"
+                  style={{
+                    borderRadius: '8px',
+                    border: '3px solid #d4af37',
+                  }}
+                >
+                  <div className="text-center space-y-2">
+                    <p
+                      className="text-lg sm:text-xl md:text-2xl font-black text-[#d4af37]"
+                      style={{
+                        fontFamily: 'Noto Serif',
+                        fontWeight: 900,
+                        letterSpacing: '1px',
+                        textShadow: '2px 2px 4px rgba(0,0,0,0.5)',
+                      }}
+                    >
+                      FLEXIBLE SCHEDULES WORLDWIDE
+                    </p>
+                    <p
+                      className="text-sm sm:text-base md:text-lg font-semibold text-white"
+                      style={{
+                        fontFamily: 'Noto Serif',
+                        fontWeight: 600,
+                        letterSpacing: '0.5px',
+                      }}
+                    >
+                      ONLINE CLASSES ANYTIME, ANYWHERE
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Social Media Icons */}
+              <div className="flex items-center justify-center lg:justify-start space-x-3">
+                {[
+                  { Icon: Youtube, href: "https://www.youtube.com/@Al-AzharSchool-london", color: "#FF0000" },
+                  { Icon: Facebook, href: "https://www.facebook.com/al.azhar.school.2025", color: "#1877F3" },
+                  { Icon: Twitter, href: "https://x.com/AlAzharSchool19", color: "#1DA1F2" },
+                  { Icon: TelegramIcon, href: "https://t.me/+SN-s-3GtM6FlMWQ0", color: "#229ED9" },
+                  { Icon: Instagram, href: "https://www.instagram.com/school.alazhar/", color: "#E1306C" },
+                  { Icon: Linkedin, href: "https://www.linkedin.com/in/al-azhar-school-a67598332", color: "#0077B5" },
+                  { Icon: TikTokIcon, href: "https://www.tiktok.com/@alazhar.school?_t=8pt46ygpr4q&_r=1", color: "#000" },
+                ].map(({ Icon, href, color }, index) => (
+                  <Link
+                    key={index}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 sm:w-12 sm:h-12 border-2 border-[#5a2600] bg-[#fde6c3] rounded-full flex items-center justify-center shadow-lg hover:shadow-2xl hover:scale-110 hover:rotate-12 transition-all duration-300"
+                    style={{ color: color || '#000' }}
+                  >
+                    <Icon className="w-5 h-5 sm:w-6 sm:h-6" />
+                  </Link>
+                ))}
+              </div>
+
+              {/* CTA Button */}
+              <div className="flex justify-center lg:justify-start">
                 <Link
                   href="/contact"
-                  className="font-black px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm rounded-lg border transition-all duration-300 hover:scale-105 w-full sm:w-auto flex items-center justify-center text-white"
+                  className="font-black px-8 py-4 text-lg rounded-lg border transition-all duration-300 hover:scale-105 flex items-center justify-center text-white"
                   style={{
                     fontFamily: "Noto Serif",
                     fontWeight: 900,
-                    background: '#ffb300',
-                    color: '#fff',
-                    border: '1.2px solid #8B4513',
-                    boxShadow: '0 6px 24px 0 #000b',
+                    background: 'linear-gradient(to right, #d4af37, #ffb300)',
+                    color: '#5a2600',
+                    border: '3px solid #5a2600',
+                    boxShadow: '0 8px 32px rgba(90,38,0,0.3)',
                   }}
                 >
                   Book Now
                 </Link>
               </div>
             </div>
-
-            {/* Right Side - Logo + Learn Quran Online + Divider */}
-            <div className="flex flex-col items-center justify-center order-first lg:order-last animate-hero-fadein w-full mt-2 sm:mt-0">
-                <Image
-                  src="/alazhar-logo.png"
-                alt="Al-Azhar School Logo"
-                width={520}
-                height={270}
-                  className="hero-logo w-40 sm:w-[220px] md:w-[320px] lg:w-[420px] xl:w-[520px] max-w-full h-auto object-contain"
-                  priority
-                />
-                <style jsx>{`
-                  @media (max-width: 768px) {
-                    .hero-logo {
-                      width: 20rem !important;
-                      min-width: 20rem !important;
-                    }
-                  }
-                `}</style>
-              <span
-                className="hero-subtitle block text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-center mt-1"
-                style={{
-                  fontFamily: 'Noto Serif',
-                  color: '#e8b007',
-                  WebkitTextStroke: '1.2px #000',
-                  textStroke: '1.2px #000',
-                  textShadow: '2px 2px 8px #000, 0 2px 4px #fff',
-                  letterSpacing: '1px',
-                  whiteSpace: 'normal',
-                  margin: '0 0 4px 0',
-                  display: 'block',
-                }}
-              >
-                Learn Quran Online
-              </span>
-              <style jsx>{`
-                @media (max-width: 768px) {
-                  .hero-subtitle {
-                    font-size: 1.5rem !important;
-                    line-height: 1.2 !important;
-                  }
-                }
-              `}</style>
-              <img 
-                src="/LINE3.svg" 
-                alt="divider" 
-                className="hidden sm:block"
-                style={{ 
-                  display: 'block', 
-                  marginTop: '2px',
-                  width: 'fit-content', 
-                  maxWidth: '100%', 
-                  height: '36px', 
-                  objectFit: 'contain',
-                  filter: 'brightness(1.1) sepia(1) hue-rotate(-20deg) saturate(8) contrast(1.2) drop-shadow(0 2px 2px #000)',
-                  position: 'static',
-                  opacity: 0,
-                  animation: 'divider-fadein 1.2s cubic-bezier(0.23,1,0.32,1) 0.2s forwards',
-                }} 
-              />
-              <style>{`
-                @keyframes divider-fadein {
-                  0% { opacity: 0; transform: translateY(32px); }
-                  100% { opacity: 1; transform: translateY(0); }
-                }
-              `}</style>
-            </div>
           </div>
         </div>
       </main>
 
-      {/* Decorative Elements */}
-      <div className="hidden sm:block absolute top-20 left-10 w-24 h-24 sm:w-32 sm:h-32 border-2 border-[#e8b007]/20 rotate-45 rounded-lg animate-pulse"></div>
-      <div className="hidden sm:block absolute bottom-20 right-10 w-20 h-20 sm:w-24 sm:h-24 border-2 border-[#e8b007]/20 rotate-12 rounded-lg animate-pulse delay-1000"></div>
-      <div className="hidden sm:block absolute top-1/2 left-20 w-2 h-2 bg-[#e8b007]/30 rounded-full animate-bounce delay-500"></div>
-      <div className="hidden sm:block absolute top-1/3 right-1/4 w-1.5 h-1.5 bg-[#e8b007]/30 rounded-full animate-bounce delay-700"></div>
+      {/* Decorative Corner Elements */}
+      <div className="hidden sm:block absolute top-8 left-8 w-16 h-16 border-t-4 border-l-4 border-[#d4af37] opacity-50"></div>
+      <div className="hidden sm:block absolute top-8 right-8 w-16 h-16 border-t-4 border-r-4 border-[#d4af37] opacity-50"></div>
+      <div className="hidden sm:block absolute bottom-8 left-8 w-16 h-16 border-b-4 border-l-4 border-[#d4af37] opacity-50"></div>
+      <div className="hidden sm:block absolute bottom-8 right-8 w-16 h-16 border-b-4 border-r-4 border-[#d4af37] opacity-50"></div>
     </div>
   )
 }
