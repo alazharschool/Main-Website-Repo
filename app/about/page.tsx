@@ -30,11 +30,11 @@ export default function AboutPage() {
       </section>
 
       {/* Our Story Section */}
-      <section className="py-16 px-4 section-light" style={{ backgroundImage: 'url(/images/islamic-pattern-new.jpg)', backgroundSize: 'cover', backgroundRepeat: 'repeat', backgroundPosition: 'center' }}>
+      <section className="py-16 px-4 section-light" style={{ backgroundImage: "url('/images/islamic-pattern-new.jpg')", backgroundSize: 'cover', backgroundRepeat: 'repeat', backgroundPosition: 'center' }}>
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-stretch">
             <FadeInSection direction="left">
-              <div className="content-overlay story-card flex flex-col h-full justify-center transition-transform duration-500 group-hover:scale-105" style={{ backgroundImage: 'url(/images/islamic-pattern-new.jpg)', backgroundSize: 'cover', backgroundRepeat: 'repeat', backgroundPosition: 'center', backgroundColor: 'rgba(255,255,255,0.92)', height: '100%' }}>
+              <div className="content-overlay story-card flex flex-col h-full justify-center transition-transform duration-500 group-hover:scale-105" style={{ backgroundImage: "url('/images/islamic-pattern-new.jpg')", backgroundSize: 'cover', backgroundRepeat: 'repeat', backgroundPosition: 'center', backgroundColor: 'rgba(255,255,255,0.92)', height: '100%' }}>
                 <h2 className="text-xl font-bold text-gray-900 mb-6">Our Story</h2>
                 <div className="space-y-1 text-sm text-gray-600">
                   <p>
