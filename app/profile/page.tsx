@@ -215,7 +215,7 @@ export default function ProfilePage() {
                 <Card className="enhanced-card rounded-2xl shadow-lg text-center">
                   <CardContent className="p-6">
                     <Avatar className="w-24 h-24 mx-auto mb-4">
-                      <AvatarImage src="/placeholder-user.jpg" alt="Profile" />
+                      <AvatarImage src="/images/placeholder-user.jpg" alt="Profile" />
                       <AvatarFallback className="bg-amber-100 text-amber-700 text-2xl font-bold">
                         {profileData.firstName[0]}{profileData.lastName[0]}
                       </AvatarFallback>

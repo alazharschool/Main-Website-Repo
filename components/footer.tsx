@@ -31,7 +31,7 @@ export default function Footer() {
               <div className="flex items-center space-x-2 sm:space-x-3 md:space-x-4 group">
                 <div className="w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 rounded-xl overflow-hidden group-hover:scale-110 transition-all duration-300 shadow-lg">
                   <Image
-                    src="/LOGOMMM.png"
+                    src="/images/LOGOMMM.png"
                     alt="Al-Azhar School Logo"
                     width={64}
                     height={64}

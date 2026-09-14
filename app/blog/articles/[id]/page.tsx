@@ -14,7 +14,7 @@ const articlesData = {
     id: "learn-quran-online",
     title: "The Importance of Learning and Memorizing the Holy Quran Online",
     excerpt: "In today's fast-paced, connected world, learning the Holy Quran online has become an essential choice for Muslims everywhere. Thanks to modern technology and trusted platforms like Al-Azhar School, anyone can easily learn to recite and memorize the Quran with high quality, guided by certified teachers from Al-Azhar University.",
-    coverImage: "/blog 2.jpg",
+    coverImage: "/images/blog 2.jpg",
     author: "Al-Azhar Scholars",
     publishDate: "2024-01-15",
     readTime: "8 min read",
@@ -72,7 +72,7 @@ const articlesData = {
     id: "islamic-education-benefits",
     title: "Benefits of Islamic Education for Children in the Digital Age",
     excerpt: "Discover how modern Islamic education combines traditional values with contemporary learning methods to provide children with a balanced and meaningful educational experience.",
-    coverImage: "/plog girl.png",
+    coverImage: "/images/plog girl.png",
     author: "Islamic Education Team",
     publishDate: "2025-08-15",
     readTime: "6 min read",
@@ -111,7 +111,7 @@ const articlesData = {
         and intellectual development at the same time.
       </p>
 
-      <div class="bg-gradient-to-r from-amber-600 to-orange-600 text-white rounded-2xl p-8 text-center mb-8" style="border: 3px solid #8B4513; background-image: url('/islamic.svg'), linear-gradient(to right, #f59e42, #ff9800); background-size: cover, cover; background-position: center, center; background-repeat: no-repeat, no-repeat;">
+      <div class="bg-gradient-to-r from-amber-600 to-orange-600 text-white rounded-2xl p-8 text-center mb-8" style="border: 3px solid #8B4513; background-image: url('/images/islamic.svg'), linear-gradient(to right, #f59e42, #ff9800); background-size: cover, cover; background-position: center, center; background-repeat: no-repeat, no-repeat;">
         <h3 class="font-bold mb-4" style={{ 
           fontFamily: "Noto Serif", 
           fontWeight: 900, 
@@ -153,7 +153,7 @@ const articlesData = {
     id: "tajweed-mastery",
     title: "Mastering Tajweed: The Art of Beautiful Quran Recitation",
     excerpt: "Learn the essential rules of Tajweed and how proper pronunciation enhances your connection with the Holy Quran. Our comprehensive guide covers everything from basic rules to advanced techniques.",
-    coverImage: "/tajweed.jpg",
+    coverImage: "/images/tajweed.jpg",
     author: "Quran Teachers",
     publishDate: "2024-01-08",
     readTime: "10 min read",
@@ -192,14 +192,14 @@ const articlesData = {
     id: "ramadan-preparation",
     title: "Preparing for Ramadan: A Complete Guide for Families",
     excerpt: "Get ready for the blessed month of Ramadan with practical tips for families.",
-    coverImage: "/ramadan.jpg",
+    coverImage: "/images/ramadan.jpg",
     author: "Islamic Scholars",
     publishDate: "2024-01-05",
     readTime: "12 min read",
     category: "Islamic Life",
     tags: ["Ramadan", "family", "spiritual preparation", "Islamic traditions"],
     content: `
-      <img src="/ramadan.jpg" alt="Preparing for Ramadan" style="width:100%;max-width:600px;display:block;margin:0 auto 2rem auto;border-radius:1.5rem;box-shadow:0 8px 32px #000a;" />
+      <img src="/images/ramadan.jpg" alt="Preparing for Ramadan" style="width:100%;max-width:600px;display:block;margin:0 auto 2rem auto;border-radius:1.5rem;box-shadow:0 8px 32px #000a;" />
       <p class="mb-6 text-lg leading-relaxed">
         Ramadan is a blessed month that brings families together in worship, reflection, and spiritual growth. 
         Proper preparation ensures that families can make the most of this sacred time.
@@ -233,7 +233,7 @@ const articlesData = {
     id: "online-learning-tips",
     title: "Maximizing Your Online Islamic Learning Experience",
     excerpt: "Discover proven strategies to make the most of your online Islamic education journey.",
-    coverImage: "/plog5.jpg",
+    coverImage: "/images/plog5.jpg",
     author: "Education Experts",
     publishDate: "2024-01-03",
     readTime: "7 min read",
@@ -272,14 +272,14 @@ const articlesData = {
     id: "islamic-values-children",
     title: "Instilling Islamic Values in Children: A Parent's Guide",
     excerpt: "Learn effective methods for teaching Islamic values to children in an engaging and meaningful way.",
-    coverImage: "/blog 44.jpg",
+    coverImage: "/images/blog 44.jpg",
     author: "Parenting Experts",
     publishDate: "2024-01-01",
     readTime: "9 min read",
     category: "Parenting",
     tags: ["Islamic values", "parenting", "children", "spiritual development"],
     content: `
-      <img src="/blog 44.jpg" alt="Instilling Islamic Values in Children" style="width:100%;max-width:600px;display:block;margin:0 auto 2rem auto;border-radius:1.5rem;box-shadow:0 8px 32px #000a;" />
+      <img src="/images/blog 44.jpg" alt="Instilling Islamic Values in Children" style="width:100%;max-width:600px;display:block;margin:0 auto 2rem auto;border-radius:1.5rem;box-shadow:0 8px 32px #000a;" />
       <p class="mb-6 text-lg leading-relaxed">
         Teaching Islamic values to children is one of the most important responsibilities of Muslim parents. 
         It requires patience, creativity, and a deep understanding of both Islamic principles and child development.
@@ -311,14 +311,14 @@ const articlesData = {
     id: "best-quran-platforms-kids",
     title: "Best Online Quran Learning Platforms for Kids",
     excerpt: "Discover the top trusted and engaging online Quran classes for children, with certified teachers and interactive tools.",
-    coverImage: "/platform.jpg",
+    coverImage: "/images/platform.jpg",
     author: "Al-Azhar School Team",
     publishDate: "2024-06-01",
     readTime: "7 min read",
     category: "Education",
     tags: ["learn Quran online for kids", "Quran classes for children", "Quran for beginners kids", "Al-Azhar teachers", "online Quran"],
     content: `
-      <img src="/platform.jpg" alt="Best Online Quran Learning Platforms for Kids" style="width:100%;max-width:600px;display:block;margin:0 auto 2rem auto;border-radius:1.5rem;box-shadow:0 8px 32px #000a;" />
+      <img src="/images/platform.jpg" alt="Best Online Quran Learning Platforms for Kids" style="width:100%;max-width:600px;display:block;margin:0 auto 2rem auto;border-radius:1.5rem;box-shadow:0 8px 32px #000a;" />
       <h1 style="font-size:34px !important; margin-top:1cm !important; margin-bottom:1cm !important;">Best Online Quran Learning Platforms for Kids</h1>
       <p style="margin-bottom:1cm;">In today’s digital age, many Muslim parents are searching for the best ways to <strong>learn Quran online for kids</strong>. Finding trustworthy and engaging <strong>Quran classes for children</strong> can make a huge difference in building a child’s love for the Holy Quran.</p>
       <h2 style="font-size:34px !important; margin-bottom:1cm !important; margin-top:1cm !important;">Why Choose Online Quran Classes for Kids?</h2>
@@ -385,7 +385,7 @@ const articlesData = {
     id: "learn-quran-tajweed-online",
     title: "Learn Quran Tajweed Online With Qualified Native Arabic Teachers",
     excerpt: "Master the Art of Quran Recitation with Tajweed. Learn from certified native Arabic-speaking teachers—anytime, anywhere. Perfect your pronunciation, get live correction, and enjoy flexible scheduling with modern online tools.",
-    coverImage: "/tajweed.png",
+    coverImage: "/images/tajweed.png",
     author: "Al-Azhar School",
     publishDate: "2025-08-10",
     readTime: "8 min read",

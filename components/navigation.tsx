@@ -29,7 +29,7 @@ export default function Navigation() {
         <Link href="/" className="flex items-center gap-3 cursor-pointer group">
           <div className="relative w-12 h-12 overflow-hidden rounded-full border-2 border-amber-500 bg-amber-50/50 p-1 transition-transform duration-300 group-hover:scale-105 shadow-inner">
             <Image
-              src="/logo.png"
+              src="/images/logo.png"
               alt="Al-Azhar School Logo"
               width={48}
               height={48}

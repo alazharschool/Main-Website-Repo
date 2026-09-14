@@ -206,31 +206,31 @@ export default function BlogPage() {
                 id: "learn-quran-online",
                 title: "The Importance of Learning and Memorizing the Holy Quran Online",
                 excerpt: "In today's fast-paced, connected world, learning the Holy Quran online has become an essential choice for Muslims everywhere.",
-                image: "/quran_7221480.png"
+                image: "/images/quran_7221480.png"
               },
               {
                 id: "islamic-education-benefits",
                 title: "Benefits of Islamic Education for Children in the Digital Age",
                 excerpt: "Discover how modern Islamic education combines traditional values with contemporary learning methods to provide children with a balanced and meaningful educational experience.",
-                image: "/blog 2.png"
+                image: "/images/blog 2.png"
               },
               {
                 id: "tajweed-mastery",
                 title: "Mastering Tajweed: The Art of Beautiful Quran Recitation",
                 excerpt: "Learn the essential rules of Tajweed and how proper pronunciation enhances your connection with the Holy Quran.",
-                image: "/quran-logo.jpg"
+                image: "/images/quran-logo.jpg"
               },
               {
                 id: "ramadan-preparation",
                 title: "Preparing for Ramadan :\nA Complete Guide for Families",
                 excerpt: "Get ready for the blessed month of Ramadan with practical tips for families, including spiritual preparation.",
-                image: "/ramadan.jpg"
+                image: "/images/ramadan.jpg"
               },
               {
                 id: "best-quran-platforms-kids",
                 title: "Best Online Quran Learning Platforms for Kids",
                 excerpt: "Discover the top trusted and engaging online Quran classes for children, with certified teachers and interactive tools.",
-                image: "/platform.jpg"
+                image: "/images/platform.jpg"
               }
             ].map((post) => (
               <ArticleCard post={post} key={post.id} />

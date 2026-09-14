@@ -14,7 +14,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 px-4 relative overflow-hidden" style={{ backgroundImage: "url('/islamic-pattern-new.jpg')", backgroundSize: 'cover', backgroundRepeat: 'repeat', backgroundPosition: 'center' }}>
+      <section className="py-20 px-4 relative overflow-hidden" style={{ backgroundImage: "url('/images/islamic-pattern-new.jpg')", backgroundSize: 'cover', backgroundRepeat: 'repeat', backgroundPosition: 'center' }}>
         <ShimmerBackground />
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <div className="bg-white/95 backdrop-blur-md border-t-4 border-amber-600 rounded-2xl p-8 my-10 shadow-xl max-w-3xl mx-auto text-center transition-all duration-300 hover:shadow-2xl">
@@ -30,11 +30,11 @@ export default function AboutPage() {
       </section>
 
       {/* Our Story Section */}
-      <section className="py-16 px-4 section-light" style={{ backgroundImage: 'url(/islamic-pattern-new.jpg)', backgroundSize: 'cover', backgroundRepeat: 'repeat', backgroundPosition: 'center' }}>
+      <section className="py-16 px-4 section-light" style={{ backgroundImage: 'url(/images/islamic-pattern-new.jpg)', backgroundSize: 'cover', backgroundRepeat: 'repeat', backgroundPosition: 'center' }}>
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-stretch">
             <FadeInSection direction="left">
-              <div className="content-overlay story-card flex flex-col h-full justify-center transition-transform duration-500 group-hover:scale-105" style={{ backgroundImage: 'url(/islamic-pattern-new.jpg)', backgroundSize: 'cover', backgroundRepeat: 'repeat', backgroundPosition: 'center', backgroundColor: 'rgba(255,255,255,0.92)', height: '100%' }}>
+              <div className="content-overlay story-card flex flex-col h-full justify-center transition-transform duration-500 group-hover:scale-105" style={{ backgroundImage: 'url(/images/islamic-pattern-new.jpg)', backgroundSize: 'cover', backgroundRepeat: 'repeat', backgroundPosition: 'center', backgroundColor: 'rgba(255,255,255,0.92)', height: '100%' }}>
                 <h2 className="text-xl font-bold text-gray-900 mb-6">Our Story</h2>
                 <div className="space-y-1 text-sm text-gray-600">
                   <p>
@@ -56,7 +56,7 @@ export default function AboutPage() {
             <FadeInSection direction="right" delay={300}>
               <div className="relative group h-full flex items-center justify-center">
                 <Image
-                  src="/OURSTORYPIC.png"
+                  src="/images/OURSTORYPIC.png"
                   alt="Our Story"
                   width={600}
                   height={400}
@@ -69,13 +69,13 @@ export default function AboutPage() {
         </div>
       </section>
 {/* Teacher Image Section */}
-<section className="py-16 px-4 section-light" style={{ backgroundImage: "url('/islamic-pattern-new.jpg')", backgroundSize: 'cover', backgroundRepeat: 'repeat', backgroundPosition: 'center' }}>
+<section className="py-16 px-4 section-light" style={{ backgroundImage: "url('/images/islamic-pattern-new.jpg')", backgroundSize: 'cover', backgroundRepeat: 'repeat', backgroundPosition: 'center' }}>
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-stretch">
             <FadeInSection direction="left" delay={200}>
               <div className="relative group h-full flex items-center justify-center">
                 <Image
-                  src="/TEACHERS1.png"
+                  src="/images/TEACHERS1.png"
                   alt="Certified Al-Azhar teacher conducting online class with international students"
                   width={600}
                   height={500}
@@ -85,7 +85,7 @@ export default function AboutPage() {
               </div>
             </FadeInSection>
             <FadeInSection direction="right" delay={400}>
-              <div className="content-overlay flex flex-col justify-center h-full w-full rounded-2xl p-3 sm:p-6 md:p-8 shadow-lg border border-amber-200 bg-white/90" style={{ minHeight: '350px', maxHeight: '500px', aspectRatio: '1/1', backgroundImage: "url('/islamic-pattern-new.jpg')", backgroundSize: 'cover', backgroundRepeat: 'repeat', backgroundPosition: 'center' }}>
+              <div className="content-overlay flex flex-col justify-center h-full w-full rounded-2xl p-3 sm:p-6 md:p-8 shadow-lg border border-amber-200 bg-white/90" style={{ minHeight: '350px', maxHeight: '500px', aspectRatio: '1/1', backgroundImage: "url('/images/islamic-pattern-new.jpg')", backgroundSize: 'cover', backgroundRepeat: 'repeat', backgroundPosition: 'center' }}>
                 <div className="custom-learn-title font-bold text-gray-900 mb-1 sm:mb-2 text-xs sm:text-base md:text-lg">Learn from the Best</div>
                 <div className="custom-learn-text space-y-1 sm:space-y-2 md:space-y-3 text-xs sm:text-sm md:text-base text-gray-600 leading-tight sm:leading-relaxed">
                   <div>Our teachers are carefully selected graduates from Al-Azhar University, the world's most prestigious Islamic institution. Each instructor brings years of experience in traditional Islamic scholarship combined with modern pedagogical methods.</div>
@@ -153,7 +153,7 @@ export default function AboutPage() {
 
       
       {/* Final CTA Section */}
-      <section className="py-20 px-4 text-center relative overflow-hidden" style={{ backgroundColor: "#5a2600", backgroundImage: "url('/backgrund1.svg')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+      <section className="py-20 px-4 text-center relative overflow-hidden" style={{ backgroundColor: "#5a2600", backgroundImage: "url('/images/backgrund1.svg')", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-[#a0522d] via-[#8b4513] to-[#a0522d] animate-pulse opacity-20"></div>
         </div>

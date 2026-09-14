@@ -45,7 +45,7 @@ export default function HomePage() {
           <section className="py-6 sm:py-8 px-4 section-light relative overflow-hidden">
             <div className="absolute inset-0 z-0">
               <Image
-                src="/islamic-pattern-new.jpg"
+                src="/images/islamic-pattern-new.jpg"
                 alt=""
                 fill
                 className="object-cover opacity-30"
@@ -85,7 +85,7 @@ export default function HomePage() {
             <FadeInSection direction="right" delay={300}>
               <div className="relative group" style={{ border: '4px solid #8B4513', borderRadius: '2rem', overflow: 'hidden', boxShadow: '0 12px 48px rgba(0,0,0,0.55)' }}>
                 <Image
-                      src="/OURSTORYPIC.png"
+                      src="/images/OURSTORYPIC.png"
                       alt="Our Story - Al-Azhar School"
                   width={600}
                   height={400}
@@ -344,7 +344,7 @@ export default function HomePage() {
                     <CardHeader className="bg-gradient-to-br from-yellow-100/80 to-orange-100/80 p-4" style={{ borderTopLeftRadius: '2rem', borderTopRightRadius: '2rem' }}>
                         <div className="relative w-full h-32 sm:h-40 md:h-48 rounded-xl mx-auto group-hover:scale-105 transition border-2 border-yellow-400 overflow-hidden" style={{ boxShadow: '0 8px 32px 0 #000a, 0 1.5px 0 #fff' }}>
                           <Image
-                            src="/quranbook.avif"
+                            src="/images/quranbook.avif"
                             alt="Quran Memorization"
                             fill
                             className="object-cover"
@@ -383,7 +383,7 @@ export default function HomePage() {
                     <CardHeader className="bg-gradient-to-br from-yellow-100/80 to-orange-100/80 p-4" style={{ borderTopLeftRadius: '2rem', borderTopRightRadius: '2rem' }}>
                       <div className="relative w-full h-32 sm:h-40 md:h-48 rounded-xl mx-auto group-hover:scale-105 transition border-2 border-yellow-400 overflow-hidden" style={{ boxShadow: '0 8px 32px 0 #000a, 0 1.5px 0 #fff' }}>
                         <Image
-                          src={idx === 1 ? "/najad-arabic-.jpg" : "/islamicstudy.webp"}
+                          src={idx === 1 ? "/images/najad-arabic-.jpg" : "/images/islamicstudy.webp"}
                           alt={idx === 1 ? "Arabic Language" : "Islamic Studies"}
                           fill
                           className="object-cover"
@@ -412,7 +412,7 @@ export default function HomePage() {
         <section className="py-12 sm:py-16 md:py-20 px-4 bg-gradient-to-r from-amber-50 to-yellow-50 relative overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/backgrund1.svg"
+              src="/images/backgrund1.svg"
               alt=""
               fill
               className="object-cover opacity-20"
@@ -433,7 +433,7 @@ export default function HomePage() {
           <FadeInSection>
               <div className="flex flex-col items-center justify-center gap-0 mb-2">
                 <div className="flex items-center justify-center gap-3 achievements-row">
-                  <Image src="/sudent1.png" alt="Student Icon" width={160} height={160} className="achievements-icon w-32 h-32 sm:w-40 sm:h-40 object-contain" style={{marginRight:'1rem', background: 'none', filter: 'drop-shadow(0 4px 16px #e8b00788) drop-shadow(0 1px 4px #e8b00755)'}} />
+                  <Image src="/images/sudent1.png" alt="Student Icon" width={160} height={160} className="achievements-icon w-32 h-32 sm:w-40 sm:h-40 object-contain" style={{marginRight:'1rem', background: 'none', filter: 'drop-shadow(0 4px 16px #e8b00788) drop-shadow(0 1px 4px #e8b00755)'}} />
                   <h2 className="achievements-title h2 text-[#5a2600] text-2xl sm:text-3xl md:text-4xl m-0 text-center" style={{ fontFamily: "Noto Serif", fontWeight: 900, textShadow: "0 8px 32px #e8b007cc, 0 2px 8px #e8b00799, 2px 2px 4px rgba(0,0,0,0.10)", lineHeight: 1.1, marginTop: 0 }}>
                       Our Achievements
                     </h2>
@@ -536,7 +536,7 @@ export default function HomePage() {
                     Why Choose Us
                   </h2>
                   <Image
-                    src="/question-mark.png"
+                    src="/images/question-mark.png"
                     alt="?"
                     width={56}
                     height={56}
@@ -594,7 +594,7 @@ export default function HomePage() {
         <section className="py-12 sm:py-16 px-4 bg-gradient-to-r from-amber-50 to-yellow-50 relative overflow-hidden">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/backgrund1.svg"
+              src="/images/backgrund1.svg"
               alt=""
               fill
               className="object-cover opacity-20"
@@ -626,7 +626,7 @@ export default function HomePage() {
             }}
           >
             <Image
-              src="/quran_16777693.png"
+              src="/images/quran_16777693.png"
               alt="Quran Icon"
               width={128}
               height={128}

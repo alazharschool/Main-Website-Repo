@@ -36,7 +36,7 @@ export default function ServicesPage() {
               <div className="grid lg:grid-cols-2 gap-0">
                 <div className="relative h-64 lg:h-auto group overflow-hidden">
                   <Image
-                    src="/studentboy.png"
+                    src="/images/studentboy.png"
                     alt="Student memorizing Quran with teacher guidance"
                     width={600}
                     height={400}
@@ -144,7 +144,7 @@ export default function ServicesPage() {
                 </div>
                 <div className="relative h-64 lg:h-auto order-1 lg:order-2 group overflow-hidden">
                   <Image
-                    src="/GERL.jpg"
+                    src="/images/GERL.jpg"
                     alt="Arabic language learning session with alphabet and vocabulary"
                     width={600}
                     height={400}
@@ -161,7 +161,7 @@ export default function ServicesPage() {
               <div className="grid lg:grid-cols-2 gap-0">
                 <div className="relative h-64 lg:h-auto group overflow-hidden">
                   <Image
-                    src="/boy.png"
+                    src="/images/boy.png"
                     alt="Islamic studies class covering Fiqh, Seerah, and Tafseer"
                     width={600}
                     height={400}
@@ -220,7 +220,7 @@ export default function ServicesPage() {
 
       {/* Final CTA Section */}
       <section className="py-20 px-4 bg-gradient-to-r from-amber-600 to-orange-600 text-white text-center relative overflow-hidden" style={{ position: 'relative' }}>
-        <img src="/backgrund1.svg" alt="background decorative" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0, pointerEvents: 'none' }} />
+        <img src="/images/backgrund1.svg" alt="background decorative" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0, pointerEvents: 'none' }} />
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-amber-600 via-orange-600 to-amber-600 animate-pulse opacity-50"></div>
         </div>
