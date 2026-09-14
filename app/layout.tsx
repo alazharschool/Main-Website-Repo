@@ -18,9 +18,9 @@ export default function RootLayout({
       </head>
       <body className={notoSansArabic.className} style={{
         backgroundImage: "url('/images/hero/islamic-bg-arch.jpg')",
-        backgroundSize: 'cover',
+        backgroundSize: 'auto',
         backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
+        backgroundRepeat: 'repeat',
         backgroundAttachment: 'fixed',
       }}>
         <Navigation />
