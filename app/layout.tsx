@@ -23,6 +23,21 @@ export default function RootLayout({
         backgroundRepeat: 'repeat',
         backgroundAttachment: 'fixed',
       }}>
+        {/* Transparent Overlay */}
+        <div style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundImage: "url('/images/hero/islamic-bg-arch1.jpg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          opacity: 0.5,
+          pointerEvents: 'none',
+          zIndex: 0,
+        }} />
         <Navigation />
         <main>{children}</main>
         <Footer />

@@ -1,26 +1,10 @@
 "use client"
 
-import Image from "next/image"
 import Link from "next/link"
 
 export default function HeroSection() {
   return (
     <div className="relative w-full min-h-screen overflow-hidden">
-      {/* Background Layer - Islamic Arch Image */}
-      <div className="absolute inset-0">
-        <Image
-          src="/images/hero/islamic-bg-arch.jpg"
-          alt="Islamic Background"
-          fill
-          className="object-cover"
-          priority
-          sizes="100vw"
-        />
-      </div>
-
-      {/* Semi-transparent Cream Tint Overlay */}
-      <div className="absolute inset-0 bg-[#FAF6EF]/70" />
-
       {/* Content Layer */}
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-4xl mx-auto text-center space-y-8">
