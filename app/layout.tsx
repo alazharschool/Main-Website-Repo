@@ -16,7 +16,13 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body className={notoSansArabic.className}>
+      <body className={notoSansArabic.className} style={{
+        backgroundImage: "url('/images/hero/islamic-bg-arch.jpg')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed',
+      }}>
         <Navigation />
         <main>{children}</main>
         <Footer />
