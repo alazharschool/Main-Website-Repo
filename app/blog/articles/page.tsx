@@ -177,7 +177,7 @@ export default function ArticlesPage() {
                 border: '4px solid #8B4513',
                 boxShadow: '0 8px 32px #8B451344',
                 borderRadius: '2rem',
-                backgroundImage: "url('/islamic-pattern-bg.jpg')",
+                backgroundImage: 'none',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'repeat',
@@ -523,7 +523,7 @@ export default function ArticlesPage() {
       {/* Newsletter Section */}
       <section className="py-16 px-4 text-white"
         style={{
-          backgroundImage: "url('/islamic-pattern-bg.jpg')",
+          backgroundImage: 'none',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'repeat',

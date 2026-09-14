@@ -65,7 +65,7 @@ export default function LoginPage() {
     <div 
       className="min-h-screen py-20 px-4 relative"
       style={{
-        backgroundImage: 'url("/backgrund1.svg")',
+        backgroundImage: 'none',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -81,7 +81,7 @@ export default function LoginPage() {
           <div 
             className="max-w-5xl mx-auto rounded-3xl shadow-2xl p-12 border-4 border-amber-600 relative overflow-hidden"
             style={{
-              backgroundImage: 'url("/islamic-pattern-bg.jpg")',
+              backgroundImage: 'none',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',

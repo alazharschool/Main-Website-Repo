@@ -169,7 +169,7 @@ export default function FAQPage() {
 
       {/* Still Have Questions Section */}
       <section className="py-16 px-4 section-light" style={{
-        backgroundImage: "url(/backgrund1.svg)",
+        backgroundImage: 'none',
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center"

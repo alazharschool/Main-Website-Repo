@@ -118,7 +118,7 @@ export default function BlogPage() {
       </section>
 
       {/* Teaching Features Section */}
-      <section className="py-16 px-4" style={{ backgroundImage: "url('/islamic.svg')", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
+      <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <FadeInSection>
             <div className="text-center max-w-2xl mx-auto mb-12">
@@ -243,7 +243,7 @@ export default function BlogPage() {
       <section
         className="py-20 px-4 bg-gradient-to-r from-amber-600 to-orange-600 text-white text-center relative overflow-hidden"
         style={{
-          backgroundImage: "url('/islamic.svg'), linear-gradient(to right, #d97706, #ea580c)",
+          backgroundImage: 'linear-gradient(to right, #d97706, #ea580c)',
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat"
@@ -288,7 +288,7 @@ export default function BlogPage() {
       <div
         className="mx-auto my-12 bg-white rounded-3xl shadow-2xl p-8 md:p-16 flex flex-col items-center justify-center"
         style={{
-          backgroundImage: "url('/backgrund1.svg')",
+          backgroundImage: 'none',
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

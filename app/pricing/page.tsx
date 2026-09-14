@@ -17,7 +17,7 @@ export default function PricingPage() {
     <div
       className="min-h-screen"
       style={{
-        backgroundImage: "url('/islamic-pattern-new.jpg')",
+        backgroundImage: 'none',
         backgroundSize: "cover",
         backgroundRepeat: "repeat",
         backgroundPosition: "center"
@@ -301,7 +301,7 @@ export default function PricingPage() {
       <section
         className="py-20 px-4 text-white text-center relative overflow-hidden"
         style={{
-          backgroundImage: 'url(/backgrund1.svg)',
+          backgroundImage: 'none',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'

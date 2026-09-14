@@ -307,7 +307,7 @@ export default function WelcomeNewStudentPage() {
   return (
     <div className="min-h-screen py-20 px-4 relative"
       style={{
-        backgroundImage: 'url("/backgrund1.svg")',
+        backgroundImage: 'none',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

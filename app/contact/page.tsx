@@ -192,7 +192,7 @@ export default function ContactPage() {
       {/* Location Map Section */}
       <section className="py-16 px-4 section-light" style={{
         position: 'relative',
-        backgroundImage: 'url(/backgrund1.svg)',
+        backgroundImage: 'none',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
@@ -348,7 +348,7 @@ export default function ContactPage() {
 
       {/* Final CTA Section */}
       <section className="py-20 px-4 text-center relative overflow-hidden" style={{
-        backgroundImage: 'url(/backgrund1.svg)',
+        backgroundImage: 'none',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

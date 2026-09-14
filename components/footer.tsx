@@ -21,14 +21,7 @@ const TelegramIcon = ({ className }: { className?: string }) => (
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden footer-shift-right" style={{ backgroundColor: "#e8d5b7" }}>
-      {/* Subtle Islamic geometric pattern overlay */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-10 left-10 w-24 h-24 sm:w-32 sm:h-32 border border-amber-700 rotate-45 rounded-lg animate-pulse"></div>
-        <div className="absolute bottom-20 right-20 w-20 h-20 sm:w-24 sm:h-24 border border-amber-700 rotate-12 rounded-lg animate-pulse delay-700"></div>
-        <div className="absolute top-1/2 left-1/4 w-12 h-12 sm:w-16 sm:h-16 border border-amber-700 rotate-45 rounded-lg animate-pulse delay-1000"></div>
-        <div className="absolute bottom-1/3 left-1/2 w-16 h-16 sm:w-20 sm:h-20 border border-amber-700 rotate-12 rounded-lg animate-pulse delay-500"></div>
-      </div>
+    <footer className="relative overflow-hidden footer-shift-right">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 relative z-10 footer-main-content">
         <FadeInSection>

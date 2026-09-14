@@ -571,7 +571,7 @@ export default function ArticlePage({ params }: { params: { id: string } }) {
         {/* Call to Action */}
         <FadeInSection>
           <div className="bg-gradient-to-r from-amber-600 to-orange-600 text-white rounded-2xl p-8 text-center" style={{
-            backgroundImage: "url('/islamic.svg'), linear-gradient(to right, #f59e42, #ff9800)",
+            backgroundImage: 'linear-gradient(to right, #f59e42, #ff9800)',
             backgroundSize: "cover, cover",
             backgroundPosition: "center, center",
             backgroundRepeat: "no-repeat, no-repeat",

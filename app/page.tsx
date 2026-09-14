@@ -18,33 +18,6 @@ import { use } from "react"
 export default function HomePage() {
   return (
     <>
-      {/* ديكور صورة القرآن في الخلفية يمين الصفحة */}
-      <div
-        className="fixed top-0 right-0 w-80 h-screen z-0 opacity-10 pointer-events-none"
-      >
-        <Image
-          src="/quran_7221480.png"
-          alt=""
-          width={320}
-          height={1080}
-          className="w-full h-full object-contain"
-          draggable={false}
-        />
-      </div>
-      {/* ديكور صورة كتاب في الخلفية يسار الصفحة */}
-      <div
-        className="fixed top-0 left-0 w-80 h-screen z-0 opacity-10 pointer-events-none"
-      >
-        <Image
-          src="/book_13534590.png"
-          alt=""
-          width={320}
-          height={1080}
-          className="w-full h-full object-contain"
-          draggable={false}
-        />
-      </div>
-      {/* باقي الصفحة */}
     <div className="min-h-screen relative z-10">
       {/* Hero Section */}
       <HeroSection />
