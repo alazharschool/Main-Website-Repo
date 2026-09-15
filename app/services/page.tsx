@@ -10,9 +10,9 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 px-4 relative overflow-hidden">
+      <section className="py-20 relative overflow-hidden">
         <ShimmerBackground />
-        <div className="max-w-6xl mx-auto text-center relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <FadeInSection>
             <div className="bg-white/95 backdrop-blur-md border-t-4 border-amber-600 rounded-2xl p-8 my-10 shadow-xl max-w-3xl mx-auto text-center transition-all duration-300 hover:shadow-2xl">
               <h1 className="text-3xl md:text-4xl font-extrabold text-amber-900 tracking-wide mb-4 relative inline-block">
@@ -28,203 +28,166 @@ export default function ServicesPage() {
       </section>
 
       {/* Services Cards */}
-      <section className="py-16 px-4">
-        <div className="max-w-6xl mx-auto space-y-16">
-          {/* Quran Memorization */}
-          <FadeInSection direction="right" delay={200}>
-            <Card className="enhanced-card brown-stroke rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-amber-500/20 transition-all duration-500 hover:-translate-y-2">
-              <div className="grid lg:grid-cols-2 gap-0">
-                <div className="relative h-64 lg:h-auto group overflow-hidden">
-                  <Image
-                    src="/images/studentboy.png"
-                    alt="Student memorizing Quran with teacher guidance"
-                    width={600}
-                    height={400}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                </div>
-                <div className="p-8 lg:p-12 content-overlay-light">
-                  <div className="flex items-center mb-6">
-                    <div className="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center mr-4 hover:scale-110 hover:rotate-12 transition-all duration-300">
-                      <BookOpen className="w-8 h-8 text-white" />
+      <section className="py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Quran Memorization */}
+            <FadeInSection direction="right" delay={200}>
+              <Card className="bg-[#FAF6EF] border-2 border-[#D4AF37] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-amber-500/20 transition-all duration-500 hover:-translate-y-2">
+                <div className="p-8">
+                  <div className="flex flex-col items-center mb-6">
+                    <div className="w-20 h-20 bg-gradient-to-br from-[#D4AF37] to-[#B8860B] rounded-full flex items-center justify-center mb-4 hover:scale-110 hover:rotate-12 transition-all duration-300 shadow-lg">
+                      <BookOpen className="w-10 h-10 text-white" />
                     </div>
-                    <div>
-                      <div className="force-22px">Quran Memorization</div>
-                      <p className="force-22px">Hifz Program</p>
-                    </div>
+                    <h3 className="text-2xl font-bold text-[#1B3B36] text-center">Quran Memorization</h3>
+                    <p className="text-lg font-semibold text-[#1B3B36]/80 text-center">Hifz Program</p>
                   </div>
 
                   <div className="space-y-4 mb-8">
-                    <p className="force-22px">
+                    <p className="text-base text-gray-800 leading-relaxed text-center">
                       Master the art of Quran memorization with our comprehensive Hifz program. Our certified teachers
                       provide personalized guidance to help you memorize the Holy Quran with proper Tajweed and
                       understanding.
                     </p>
 
-                    <div className="grid md:grid-cols-2 gap-4">
-                      <div className="flex items-center group">
-                        <Users className="w-5 h-5 text-amber-600 mr-2 group-hover:scale-110 transition-transform duration-200" />
-                        <span className="text-gray-700">Individual & Group Lessons</span>
+                    <div className="space-y-3">
+                      <div className="flex items-center">
+                        <Users className="w-5 h-5 text-[#D4AF37] mr-3" />
+                        <span className="text-gray-800">Individual & Group Lessons</span>
                       </div>
-                      <div className="flex items-center group">
-                        <Star className="w-5 h-5 text-amber-600 mr-2 group-hover:scale-110 transition-transform duration-200" />
-                        <span className="text-gray-700">Tajweed Focus</span>
+                      <div className="flex items-center">
+                        <Star className="w-5 h-5 text-[#D4AF37] mr-3" />
+                        <span className="text-gray-800">Tajweed Focus</span>
                       </div>
-                      <div className="flex items-center group">
-                        <Clock className="w-5 h-5 text-amber-600 mr-2 group-hover:scale-110 transition-transform duration-200" />
-                        <span className="text-gray-700">Flexible Scheduling</span>
+                      <div className="flex items-center">
+                        <Clock className="w-5 h-5 text-[#D4AF37] mr-3" />
+                        <span className="text-gray-800">Flexible Scheduling</span>
                       </div>
-                      <div className="flex items-center group">
-                        <Award className="w-5 h-5 text-amber-600 mr-2 group-hover:scale-110 transition-transform duration-200" />
-                        <span className="text-gray-700">Certified Teachers</span>
+                      <div className="flex items-center">
+                        <Award className="w-5 h-5 text-[#D4AF37] mr-3" />
+                        <span className="text-gray-800">Certified Teachers</span>
                       </div>
                     </div>
                   </div>
 
                   <a
                     href="/contact"
-                    className="block w-fit mx-auto bg-[#ffb300] hover:bg-[#ffb300]/90 text-white px-6 py-2 rounded-full font-bold text-base border border-[#8B4513] transition-all duration-300 shadow"
-                    style={{ borderWidth: '1.2px', boxShadow: '0 6px 24px #000b', fontFamily: 'Noto Serif', fontWeight: 900 }}
+                    className="block w-full text-center bg-gradient-to-r from-[#D4AF37] to-[#B8860B] hover:from-[#B8860B] hover:to-[#D4AF37] text-white px-6 py-3 rounded-full font-bold text-base transition-all duration-300 shadow-lg"
+                    style={{ fontFamily: 'Noto Serif', fontWeight: 900 }}
                   >
                     Book Now
                   </a>
                 </div>
-              </div>
-            </Card>
-          </FadeInSection>
+              </Card>
+            </FadeInSection>
 
-          {/* Arabic Language */}
-          <FadeInSection direction="up" delay={400}>
-            <Card className="enhanced-card brown-stroke rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-amber-500/20 transition-all duration-500 hover:-translate-y-2">
-              <div className="grid lg:grid-cols-2 gap-0">
-                <div className="p-8 lg:p-12 order-2 lg:order-1 content-overlay-light">
-                  <div className="flex items-center mb-6">
-                    <div className="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center mr-4 hover:scale-110 hover:rotate-12 transition-all duration-300">
-                      <Globe className="w-8 h-8 text-white" />
+            {/* Arabic Language */}
+            <FadeInSection direction="up" delay={400}>
+              <Card className="bg-[#FAF6EF] border-2 border-[#D4AF37] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-amber-500/20 transition-all duration-500 hover:-translate-y-2">
+                <div className="p-8">
+                  <div className="flex flex-col items-center mb-6">
+                    <div className="w-20 h-20 bg-gradient-to-br from-[#D4AF37] to-[#B8860B] rounded-full flex items-center justify-center mb-4 hover:scale-110 hover:rotate-12 transition-all duration-300 shadow-lg">
+                      <Globe className="w-10 h-10 text-white" />
                     </div>
-                    <div>
-                      <h2 style={{ fontSize: '22px !important' }}>Arabic Language</h2>
-                      <p style={{ fontSize: '22px !important' }}>From Letters to Fluency</p>
-                    </div>
+                    <h3 className="text-2xl font-bold text-[#1B3B36] text-center">Arabic Language</h3>
+                    <p className="text-lg font-semibold text-[#1B3B36]/80 text-center">From Letters to Fluency</p>
                   </div>
 
                   <div className="space-y-4 mb-8">
-                    <p style={{ fontSize: '22px !important' }}>
+                    <p className="text-base text-gray-800 leading-relaxed text-center">
                       Learn Arabic from basic letters to advanced fluency with our structured curriculum. Whether you're
                       a complete beginner or looking to improve your existing skills, our courses cater to all levels.
                     </p>
 
-                    <div className="grid md:grid-cols-2 gap-4">
-                      <div className="flex items-center group">
-                        <BookOpen className="w-5 h-5 text-amber-600 mr-2 group-hover:scale-110 transition-transform duration-200" />
-                        <span className="text-gray-700">All Levels Welcome</span>
+                    <div className="space-y-3">
+                      <div className="flex items-center">
+                        <BookOpen className="w-5 h-5 text-[#D4AF37] mr-3" />
+                        <span className="text-gray-800">All Levels Welcome</span>
                       </div>
-                      <div className="flex items-center group">
-                        <Users className="w-5 h-5 text-amber-600 mr-2 group-hover:scale-110 transition-transform duration-200" />
-                        <span className="text-gray-700">Interactive Classes</span>
+                      <div className="flex items-center">
+                        <Users className="w-5 h-5 text-[#D4AF37] mr-3" />
+                        <span className="text-gray-800">Interactive Classes</span>
                       </div>
-                      <div className="flex items-center group">
-                        <Globe className="w-5 h-5 text-amber-600 mr-2 group-hover:scale-110 transition-transform duration-200" />
-                        <span className="text-gray-700">Cultural Context</span>
+                      <div className="flex items-center">
+                        <Globe className="w-5 h-5 text-[#D4AF37] mr-3" />
+                        <span className="text-gray-800">Cultural Context</span>
                       </div>
-                      <div className="flex items-center group">
-                        <Award className="w-5 h-5 text-amber-600 mr-2 group-hover:scale-110 transition-transform duration-200" />
-                        <span className="text-gray-700">Progress Tracking</span>
+                      <div className="flex items-center">
+                        <Award className="w-5 h-5 text-[#D4AF37] mr-3" />
+                        <span className="text-gray-800">Progress Tracking</span>
                       </div>
                     </div>
                   </div>
 
                   <a
                     href="/contact"
-                    className="block w-fit mx-auto bg-[#ffb300] hover:bg-[#ffb300]/90 text-white px-8 py-3 rounded-full font-bold text-lg border border-[#8B4513] transition-all duration-300 shadow"
-                    style={{ borderWidth: '1.2px', boxShadow: '0 6px 24px #000b', fontFamily: 'Noto Serif', fontWeight: 900 }}
+                    className="block w-full text-center bg-gradient-to-r from-[#D4AF37] to-[#B8860B] hover:from-[#B8860B] hover:to-[#D4AF37] text-white px-6 py-3 rounded-full font-bold text-base transition-all duration-300 shadow-lg"
+                    style={{ fontFamily: 'Noto Serif', fontWeight: 900 }}
                   >
                     Book Your Lesson Now
                   </a>
                 </div>
-                <div className="relative h-64 lg:h-auto order-1 lg:order-2 group overflow-hidden">
-                  <Image
-                    src="/images/GERL.jpg"
-                    alt="Arabic language learning session with alphabet and vocabulary"
-                    width={600}
-                    height={400}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                </div>
-              </div>
-            </Card>
-          </FadeInSection>
+              </Card>
+            </FadeInSection>
 
-          {/* Islamic Studies */}
-          <FadeInSection direction="up" delay={600}>
-            <Card className="enhanced-card brown-stroke rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-amber-500/20 transition-all duration-500 hover:-translate-y-2">
-              <div className="grid lg:grid-cols-2 gap-0">
-                <div className="relative h-64 lg:h-auto group overflow-hidden">
-                  <Image
-                    src="/images/boy.png"
-                    alt="Islamic studies class covering Fiqh, Seerah, and Tafseer"
-                    width={600}
-                    height={400}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                </div>
-                <div className="p-8 lg:p-12 content-overlay-light">
-                  <div className="flex items-center mb-6">
-                    <div className="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center mr-4 hover:scale-110 hover:rotate-12 transition-all duration-300">
-                      <Award className="w-8 h-8 text-white" />
+            {/* Islamic Studies */}
+            <FadeInSection direction="left" delay={600}>
+              <Card className="bg-[#FAF6EF] border-2 border-[#D4AF37] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-amber-500/20 transition-all duration-500 hover:-translate-y-2">
+                <div className="p-8">
+                  <div className="flex flex-col items-center mb-6">
+                    <div className="w-20 h-20 bg-gradient-to-br from-[#D4AF37] to-[#B8860B] rounded-full flex items-center justify-center mb-4 hover:scale-110 hover:rotate-12 transition-all duration-300 shadow-lg">
+                      <Award className="w-10 h-10 text-white" />
                     </div>
-                    <div>
-                      <h2 style={{ fontSize: '20px !important' }}>Islamic Studies</h2>
-                      <p style={{ fontSize: '20px !important' }}>Comprehensive Islamic Education</p>
-                    </div>
+                    <h3 className="text-2xl font-bold text-[#1B3B36] text-center">Islamic Studies</h3>
+                    <p className="text-lg font-semibold text-[#1B3B36]/80 text-center">Comprehensive Islamic Education</p>
                   </div>
 
                   <div className="space-y-4 mb-8">
-                    <p style={{ fontSize: '22px !important' }}>
+                    <p className="text-base text-gray-800 leading-relaxed text-center">
                       Deepen your understanding of Islam through our comprehensive Islamic Studies program covering the basics of creed (Aqeedah), jurisprudence (Fiqh), Prophet's biography (Seerah), and Quranic interpretation (Tafseer).
                     </p>
 
-                    <div className="grid md:grid-cols-2 gap-4">
-                      <div className="flex items-center group">
-                        <BookOpen className="w-5 h-5 text-amber-600 mr-2 group-hover:scale-110 transition-transform duration-200" />
-                        <span className="text-gray-700">Aqeedah & Fiqh</span>
+                    <div className="space-y-3">
+                      <div className="flex items-center">
+                        <BookOpen className="w-5 h-5 text-[#D4AF37] mr-3" />
+                        <span className="text-gray-800">Aqeedah & Fiqh</span>
                       </div>
-                      <div className="flex items-center group">
-                        <Star className="w-5 h-5 text-amber-600 mr-2 group-hover:scale-110 transition-transform duration-200" />
-                        <span className="text-gray-700">Seerah Studies</span>
+                      <div className="flex items-center">
+                        <Star className="w-5 h-5 text-[#D4AF37] mr-3" />
+                        <span className="text-gray-800">Seerah Studies</span>
                       </div>
-                      <div className="flex items-center group">
-                        <Award className="w-5 h-5 text-amber-600 mr-2 group-hover:scale-110 transition-transform duration-200" />
-                        <span className="text-gray-700">Tafseer Classes</span>
+                      <div className="flex items-center">
+                        <Award className="w-5 h-5 text-[#D4AF37] mr-3" />
+                        <span className="text-gray-800">Tafseer Classes</span>
                       </div>
-                      <div className="flex items-center group">
-                        <Users className="w-5 h-5 text-amber-600 mr-2 group-hover:scale-110 transition-transform duration-200" />
-                        <span className="text-gray-700">Discussion Forums</span>
+                      <div className="flex items-center">
+                        <Users className="w-5 h-5 text-[#D4AF37] mr-3" />
+                        <span className="text-gray-800">Discussion Forums</span>
                       </div>
                     </div>
                   </div>
 
                   <a
                     href="/contact"
-                    className="block w-fit mx-auto bg-[#ffb300] hover:bg-[#ffb300]/90 text-white px-8 py-3 rounded-full font-bold text-lg border border-[#8B4513] transition-all duration-300 shadow"
-                    style={{ borderWidth: '1.2px', boxShadow: '0 6px 24px #000b', fontFamily: 'Noto Serif', fontWeight: 900 }}
+                    className="block w-full text-center bg-gradient-to-r from-[#D4AF37] to-[#B8860B] hover:from-[#B8860B] hover:to-[#D4AF37] text-white px-6 py-3 rounded-full font-bold text-base transition-all duration-300 shadow-lg"
+                    style={{ fontFamily: 'Noto Serif', fontWeight: 900 }}
                   >
                     Book Your Lesson Now
                   </a>
                 </div>
-              </div>
-            </Card>
-          </FadeInSection>
+              </Card>
+            </FadeInSection>
+          </div>
         </div>
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-r from-amber-600 to-orange-600 text-white text-center relative overflow-hidden" style={{ position: 'relative' }}>
+      <section className="py-20 bg-gradient-to-r from-amber-600 to-orange-600 text-white text-center relative overflow-hidden" style={{ position: 'relative' }}>
         <img src="/images/backgrund1.svg" alt="background decorative" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0, pointerEvents: 'none' }} />
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-amber-600 via-orange-600 to-amber-600 animate-pulse opacity-50"></div>
         </div>
-        <div className="max-w-4xl mx-auto relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <FadeInSection>
             <div
               className="content-overlay-heavy bg-white/90 text-[#5a2600] rounded-2xl p-8 shadow-lg w-full"

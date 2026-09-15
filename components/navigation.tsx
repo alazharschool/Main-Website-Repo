@@ -22,11 +22,11 @@ export default function Navigation() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 w-full px-4 sm:px-6 lg:px-8 py-4 bg-stone-50/80 backdrop-blur-md border-b border-amber-200/50 shadow-sm">
-      <div className="max-w-7xl mx-auto flex items-center justify-between h-16">
+    <header className="sticky top-0 z-50 w-full py-4 bg-stone-50/80 backdrop-blur-md border-b border-amber-200/50 shadow-sm" role="banner">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
 
         {/* 1. BRAND LOGO SECTION - RIGHT side in RTL (first in DOM) */}
-        <Link href="/" className="flex items-center gap-3 cursor-pointer group">
+        <Link href="/" className="flex items-center gap-3 cursor-pointer group" aria-label="Al-Azhar School Home">
           <div className="relative w-12 h-12 overflow-hidden rounded-full border-2 border-amber-500 bg-amber-50/50 p-1 transition-transform duration-300 group-hover:scale-105 shadow-inner">
             <Image
               src="/images/logo.png"
@@ -48,12 +48,13 @@ export default function Navigation() {
         </Link>
 
         {/* 2. NAVIGATION LINKS SECTION - CENTER */}
-        <nav className="hidden md:flex items-center gap-1 lg:gap-2">
+        <nav className="hidden md:flex items-center gap-1 lg:gap-2" role="navigation" aria-label="Main navigation">
           {navItems.map((link) => (
             <Link
               key={link.name}
               href={link.href}
               className="px-3 py-2 rounded-xl text-[15px] font-semibold text-stone-700 transition-all duration-200 hover:text-amber-700 hover:bg-amber-50/60 relative group"
+              aria-label={`Navigate to ${link.name}`}
             >
               {link.name}
               <span className="absolute bottom-1 left-3 right-3 h-0.5 bg-amber-600 scale-x-0 transition-transform duration-200 group-hover:scale-x-100 rounded-full" />
@@ -66,12 +67,14 @@ export default function Navigation() {
           <Link
             href="/login"
             className="hidden sm:inline-block text-[15px] font-bold text-stone-700 transition-colors duration-200 hover:text-amber-700 px-3 py-2"
+            aria-label="Login to your account"
           >
             Login
           </Link>
           <Link
             href="/contact"
             className="relative inline-flex items-center justify-center px-6 py-2.5 rounded-xl text-[15px] font-bold text-white bg-gradient-to-r from-amber-600 to-amber-700 shadow-md shadow-amber-700/20 hover:from-amber-500 hover:to-amber-600 hover:shadow-lg hover:shadow-amber-600/30 transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0"
+            aria-label="Get started with Al-Azhar School"
           >
             Get Started
           </Link>
@@ -83,11 +86,12 @@ export default function Navigation() {
                 variant="ghost"
                 size="icon"
                 className="hover:scale-110 hover:bg-amber-50 transition-all duration-100"
+                aria-label="Open mobile menu"
               >
                 <Menu className="w-9 h-9" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[280px] sm:w-[320px]">
+            <SheetContent side="right" className="w-[280px] sm:w-[320px]" role="dialog" aria-label="Mobile navigation menu">
               <div className="flex flex-col space-y-4 sm:space-y-6 mt-6">
                 <div className="flex items-center space-x-2 mb-6 sm:mb-8 group">
                   <div className="w-8 h-8 sm:w-10 sm:h-10 bg-amber-600 rounded-lg flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-all duration-100">
@@ -95,26 +99,29 @@ export default function Navigation() {
                   </div>
                   <span className="text-sm sm:text-base group-hover:text-amber-600 transition-colors duration-100">Al-Azhar School</span>
                 </div>
-                {navItems.map((item, index) => (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    className="px-3 py-2 rounded-xl text-[15px] font-semibold text-stone-700 transition-all duration-200 hover:text-amber-700 hover:bg-amber-50/60"
-                    onClick={() => setIsOpen(false)}
-                    style={{
-                      animationDelay: `${index * 100}ms`,
-                    }}
-                  >
-                    {item.name}
-                  </Link>
-                ))}
+                <nav role="navigation" aria-label="Mobile navigation">
+                  {navItems.map((item, index) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      className="px-3 py-2 rounded-xl text-[15px] font-semibold text-stone-700 transition-all duration-200 hover:text-amber-700 hover:bg-amber-50/60"
+                      onClick={() => setIsOpen(false)}
+                      style={{
+                        animationDelay: `${index * 100}ms`,
+                      }}
+                      aria-label={`Navigate to ${item.name}`}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </nav>
                 <div className="flex flex-col space-y-3 mt-4 sm:mt-6">
                   <Button
                     asChild
                     variant="outline"
                     className="bg-transparent hover:bg-amber-50 text-stone-700 border-stone-300 rounded-full hover:scale-105 transition-all duration-300 text-sm sm:text-base"
                   >
-                    <Link href="/login" onClick={() => setIsOpen(false)}>
+                    <Link href="/login" onClick={() => setIsOpen(false)} aria-label="Login to your account">
                       Login
                     </Link>
                   </Button>
@@ -122,7 +129,7 @@ export default function Navigation() {
                     asChild
                     className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 hover:to-amber-600 text-white rounded-full hover:scale-105 transition-all duration-300 text-sm sm:text-base"
                   >
-                    <Link href="/contact" onClick={() => setIsOpen(false)}>
+                    <Link href="/contact" onClick={() => setIsOpen(false)} aria-label="Get started with Al-Azhar School">
                       Get Started
                     </Link>
                   </Button>

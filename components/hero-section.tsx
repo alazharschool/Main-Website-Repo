@@ -4,18 +4,18 @@ import Link from "next/link"
 
 export default function HeroSection() {
   return (
-    <div className="relative w-full min-h-screen overflow-hidden">
+    <section className="relative w-full min-h-screen overflow-hidden" aria-label="Al-Azhar School Hero Section">
       {/* Content Layer */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 py-20">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
-          
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+
           {/* Title */}
           <h1
             className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black"
             style={{
               fontFamily: 'Noto Serif',
               fontWeight: 900,
-              color: '#5a2600',
+              color: '#1B3B36',
               letterSpacing: '2px',
               textShadow: '2px 2px 4px rgba(255,255,255,0.8)',
             }}
@@ -29,7 +29,7 @@ export default function HeroSection() {
             style={{
               fontFamily: 'Noto Serif',
               fontWeight: 700,
-              color: '#d4af37',
+              color: '#D4AF37',
               letterSpacing: '1px',
             }}
           >
@@ -37,7 +37,7 @@ export default function HeroSection() {
           </h2>
 
           {/* Feature Badges */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 w-full max-w-3xl mx-auto">
+          <nav className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 w-full max-w-3xl mx-auto" aria-label="Service Categories">
             {[
               { icon: '📖', text: 'Quran Reading', href: '/services#quran-reading' },
               { icon: '📚', text: 'Memorization', href: '/services#hifz' },
@@ -49,22 +49,23 @@ export default function HeroSection() {
               <Link
                 key={index}
                 href={feature.href}
-                className="flex flex-col items-center justify-center p-4 bg-white/90 backdrop-blur-sm border-2 border-[#d4af37] rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
+                className="flex flex-col items-center justify-center p-4 bg-[#FAF6EF]/90 backdrop-blur-sm border-2 border-[#D4AF37] rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:scale-105"
+                aria-label={`View ${feature.text} services`}
               >
-                <span className="text-3xl mb-2">{feature.icon}</span>
+                <span className="text-3xl mb-2" aria-hidden="true">{feature.icon}</span>
                 <span
                   className="text-sm font-bold text-center"
                   style={{
                     fontFamily: 'Noto Serif',
                     fontWeight: 700,
-                    color: '#5a2600',
+                    color: '#1B3B36',
                   }}
                 >
                   {feature.text}
                 </span>
               </Link>
             ))}
-          </div>
+          </nav>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -74,11 +75,12 @@ export default function HeroSection() {
               style={{
                 fontFamily: 'Noto Serif',
                 fontWeight: 900,
-                background: 'linear-gradient(to right, #d4af37, #ffb300)',
-                color: '#5a2600',
-                border: '3px solid #5a2600',
-                boxShadow: '0 8px 32px rgba(90,38,0,0.3)',
+                background: 'linear-gradient(to right, #D4AF37, #B8860B)',
+                color: '#1B3B36',
+                border: '3px solid #1B3B36',
+                boxShadow: '0 8px 32px rgba(27,59,54,0.3)',
               }}
+              aria-label="Book a consultation now"
             >
               Book Now
             </Link>
@@ -89,9 +91,10 @@ export default function HeroSection() {
                 fontFamily: 'Noto Serif',
                 fontWeight: 900,
                 background: 'transparent',
-                color: '#5a2600',
-                border: '3px solid #5a2600',
+                color: '#1B3B36',
+                border: '3px solid #1B3B36',
               }}
+              aria-label="View our services"
             >
               Our Services
             </Link>
@@ -110,6 +113,7 @@ export default function HeroSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`w-12 h-12 ${social.color} rounded-full flex items-center justify-center text-white font-bold hover:scale-110 transition-transform duration-300`}
+                aria-label={`Follow us on ${social.label}`}
               >
                 {social.label[0]}
               </Link>
@@ -117,6 +121,6 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
