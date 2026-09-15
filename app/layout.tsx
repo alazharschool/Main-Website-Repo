@@ -51,7 +51,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={notoSansArabic.className overflow-x-hidden" style={{
+      <body className={`${notoSansArabic.className} overflow-x-hidden`} style={{
         backgroundImage: "url('/images/hero/islamic-bg-arch.jpg')",
         backgroundSize: 'auto',
         backgroundPosition: 'center',
